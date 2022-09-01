@@ -9,22 +9,26 @@ export class ReservationsService {
   constructor(private prisma: PrismaService) {}
 
   create(createReservationDto: CreateReservationDto) {
-    return 'This action adds a new reservation';
+    return this.prisma.reservation.create({ data: createReservationDto });
   }
 
   findAll() {
-    return `This action returns all reservations`;
+    return this.prisma.reservation.findMany({});
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} reservation`;
-  }
-
-  update(id: number, updateReservationDto: UpdateReservationDto) {
-    return `This action updates a #${id} reservation`;
+    return this.prisma.reservation.findFirst({
+      where: {
+        id: id
+      }
+    });
   }
 
   remove(id: number) {
-    return `This action removes a #${id} reservation`;
+    return this.prisma.reservation.delete({
+      where: { 
+        id: id 
+      }
+    });
   }
 }
