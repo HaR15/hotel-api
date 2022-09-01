@@ -2,6 +2,8 @@
 
 A Next.js REST API that allows users to create reservations suites in a hotel.
 
+## Gett
+
 ## Language, Framework, Tools
 
 - [TypeScript](https://www.typescriptlang.org/) (Strongly-typed Language)
@@ -14,32 +16,44 @@ A Next.js REST API that allows users to create reservations suites in a hotel.
 
 1. Clone this repo
    
-   ```git clone git@github.com:HaR15/hotel-api.git```
+   ```
+   git clone git@github.com:HaR15/hotel-api.git
+   ```
 
 2. On the command line, `cd` into the project folder
-3. If you don't have Node.js installed on your machine, install from https://nodejs.org/en/download/
+3. If you don't have Node.js `v12.22.0` or greater installed on your machine, install from https://nodejs.org/en/download/
 3. Install npm packages: 
 
-    ```npm install```
+    ```
+    npm install
+    ```
 
 ## Compile
 
 To compile the project, run:
 
-```npm run build```
+```
+npm run build
+```
 
 ## Run
 
 To run the project, run:
 
-```npm run start```
+```
+npm run start
+```
 
 ## Tests
 
 To run the tests, run:
 
-```npm run test```
+```
+npm run test
+```
 
 To run with test coverage:
 
-```npx jest --coverage```
+```
+npx jest --coverage
+```
