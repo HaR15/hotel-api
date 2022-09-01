@@ -1,6 +1,6 @@
 # Hotel API
 
-A Next.js REST API that allows users to create reservations for hotel suites.
+A Nest.js REST API that allows users to create reservations for hotel suites.
 
 ## Language, Framework, Tools
 
