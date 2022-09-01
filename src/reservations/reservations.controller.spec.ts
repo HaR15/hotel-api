@@ -18,6 +18,24 @@ describe('ReservationsController', () => {
     service = module.get<ReservationsService>(ReservationsService);
   });
 
+  it('should create a reservation and return it when given a valid request', () => {
+    const reservationRequestDto: CreateReservationDto = {
+      firstName: "John",
+      lastName: "Doe",
+      email: "jdoe@hotmail.com",
+      numGuests: 2,
+      checkInDate: new Date(),
+      checkOutDate: new Date()
+    }
+    const reservationResultDto: CreateReservationDto = {
+      id: 1,
+      ...reservationRequestDto
+    }
+    service.create = jest.fn().mockReturnValue(reservationResultDto);
+
+    expect(controller.create(reservationRequestDto)).toBe(reservationResultDto);
+  })
+
   it('should return a reservation given an id', () => {
     const reservationRequestDto: CreateReservationDto = {
       firstName: "John",
@@ -34,6 +52,11 @@ describe('ReservationsController', () => {
     service.findOne = jest.fn().mockReturnValue(reservationResultDto);
 
     expect(controller.findOne("1")).toBe(reservationResultDto);
-    expect(controller).toBeDefined();
+  });
+
+  it('should not return a reservation given nonexistent id', () => {
+    service.findOne = jest.fn().mockReturnValue(undefined);
+
+    expect(controller.findOne("2")).toBe(undefined);
   });
 });
