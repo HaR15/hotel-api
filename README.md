@@ -46,7 +46,7 @@ The app should now be running on http://localhost:3000
 
 ## Swagger Spec
 
-To view the Swagger Spec after running the app, go to http://localhost:3001
+To view the Swagger Spec after running the app, go to http://localhost:3000/api
 
 ## Tests
 
