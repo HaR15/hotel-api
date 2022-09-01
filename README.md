@@ -2,8 +2,6 @@
 
 A Next.js REST API that allows users to create reservations suites in a hotel.
 
-## Gett
-
 ## Language, Framework, Tools
 
 - [TypeScript](https://www.typescriptlang.org/) (Strongly-typed Language)
