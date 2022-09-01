@@ -1,6 +1,6 @@
 # Hotel API
 
-A Next.js REST API that allows users to create reservations suites in a hotel.
+A Next.js REST API that allows users to create reservations for hotel suites.
 
 ## Language, Framework, Tools
 
@@ -8,7 +8,7 @@ A Next.js REST API that allows users to create reservations suites in a hotel.
 - [Node.js](https://nodejs.org/) (JavaScript Runtime environment)
 - [Nest.js](https://nestjs.com/) (Node.js framework)
 - [Prisma](https://www.prisma.io/) (ORM for Node.js and TypeScript)
-- [SQLite](https://www.sqlite.org/) (Embedded Database)  
+- [SQLite](https://www.sqlite.org/) (Embedded Database Engine)  
 
 ## Installation
 
