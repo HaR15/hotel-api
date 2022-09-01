@@ -6,7 +6,7 @@ A Next.js REST API that allows users to create reservations suites in a hotel.
 
 - [TypeScript](https://www.typescriptlang.org/) (Strongly-typed Language)
 - [Node.js](https://nodejs.org/) (JavaScript Runtime environment)
-- [Next.js](https://nextjs.org/) (Server-side framework built on top of Node.js)
+- [Nest.js](https://nestjs.com/) (Node.js framework)
 - [Prisma](https://www.prisma.io/) (ORM for Node.js and TypeScript)
 - [SQLite](https://www.sqlite.org/) (Embedded Database)  
 
@@ -41,6 +41,12 @@ To run the project, run:
 ```
 npm run start
 ```
+
+The app should now be running on http://localhost:3000
+
+## Swagger Spec
+
+To view the Swagger Spec after running the app, go to http://localhost:3001
 
 ## Tests
 
